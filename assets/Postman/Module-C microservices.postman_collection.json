@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "58a9e508-fae0-410c-a2de-fb5dd4fdab3c",
+		"name": "Module-C microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28166922",
+		"_collection_link": "https://fork-hu-dev.postman.co/workspace/ES2023-HU-RO-Training~73af892f-c295-4b3d-9501-c01363196f49/collection/28166922-58a9e508-fae0-410c-a2de-fb5dd4fdab3c?action=share&creator=28166922&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Restaurant Service",
+			"item": [
+				{
+					"name": "Get all restaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{restaurantServiceBaseUrl}}",
+							"host": [
+								"{{restaurantServiceBaseUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get restaurant info by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{restaurantServiceBaseUrl}}?restaurant_id=1",
+							"host": [
+								"{{restaurantServiceBaseUrl}}"
+							],
+							"query": [
+								{
+									"key": "restaurant_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Menu Service",
+			"item": [
+				{
+					"name": "Get menu items by restaurant ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{menuServiceBaseUrl}}?restaurant_id=1",
+							"host": [
+								"{{menuServiceBaseUrl}}"
+							],
+							"query": [
+								{
+									"key": "restaurant_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review Service",
+			"item": [
+				{
+					"name": "Get reviews by restaurant ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{reviewServiceBaseUrl}}?restaurant_id=1",
+							"host": [
+								"{{reviewServiceBaseUrl}}"
+							],
+							"query": [
+								{
+									"key": "restaurant_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"restaurant_id\": 1,\r\n    \"name\": \"Miklós Kiss\",\r\n    \"date\": \"2023-08-15\",\r\n    \"rating\": 4,\r\n    \"comments\": \"Almost perfect service\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{reviewServiceBaseUrl}}",
+							"host": [
+								"{{reviewServiceBaseUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservation Service",
+			"item": [
+				{
+					"name": "Get reservation details by restaurant ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{reservationServiceBaseUrl}}?restaurant_id=1",
+							"host": [
+								"{{reservationServiceBaseUrl}}"
+							],
+							"query": [
+								{
+									"key": "restaurant_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new reservation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"restaurant_id\": 1,\r\n        \"user_name\": \"Béla Kovács\",\r\n        \"date\": \"2023-08-15\",\r\n        \"time\": \"19:00\",\r\n        \"party_size\": 5\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{reservationServiceBaseUrl}}",
+							"host": [
+								"{{reservationServiceBaseUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order Service",
+			"item": [
+				{
+					"name": "Get orders by restaurant ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{orderServiceBaseUrl\n}}?restaurant_id=1",
+							"host": [
+								"{{orderServiceBaseUrl\n}}"
+							],
+							"query": [
+								{
+									"key": "restaurant_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"user_id\": 5,\r\n    \"date\": \"2023-08-16T14:30:00Z\",\r\n    \"restaurant_id\": 1,\r\n    \"order_items\": [\r\n        {\r\n            \"menu_id\": 4,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"menu_id\": 3,\r\n            \"quantity\": 3\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{orderServiceBaseUrl\n}}",
+							"host": [
+								"{{orderServiceBaseUrl\n}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Service",
+			"item": [
+				{
+					"name": "Create a new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"name\": \"Jakab Gipsz\",\r\n        \"email\": \"jakab.gipsz@example.com\",\r\n        \"password\": \"jakab2023\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{userServiceRegisterBaseUrl}}",
+							"host": [
+								"{{userServiceRegisterBaseUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate a user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"linda.martinez@example.com\",\r\n    \"password\": \"lindamar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{userServiceBaseUrl}}",
+							"host": [
+								"{{userServiceBaseUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate new registered user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jakab.gipsz@example.com\",\r\n    \"password\": \"jakab2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{userServiceBaseUrl}}",
+							"host": [
+								"{{userServiceBaseUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate a user with wrong username",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"linda3.martinez@example.com\",\r\n    \"password\": \"lindamar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{userServiceBaseUrl}}",
+							"host": [
+								"{{userServiceBaseUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate a user with wrong password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"linda.martinez@example.com\",\r\n    \"password\": \"lindamar2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{userServiceBaseUrl}}",
+							"host": [
+								"{{userServiceBaseUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validate a token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwibmFtZSI6IkxpbmRhIE1hcnRpbmV6IiwiZW1haWwiOiJsaW5kYS5tYXJ0aW5lekBleGFtcGxlLmNvbSIsImlhdCI6MTY5MjExODIzNCwiZXhwIjoxNjkyMTQ3MDM0fQ.Z5FEQ-SoYdIjfZQ4JLCfv1ettv7gosagqRAmauKjAIU\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{userServiceBaseUrl}}",
+							"host": [
+								"{{userServiceBaseUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validate a token with a wrong token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwibmFtZSI6IkxpbmRhIE1hcnRpbmV6IiwiZW1haWwiOiJsaW5kYS5tYXJ0aW5lekBleGFtcGxlLmNvbSIsImlhdCI6MTY5MjExODIzNCwiZXhwIjoxNjkyMTQ3MDM0fQ.Z5FEQ-SoYdIjfZQ4JLCfv1ettv7gosagqRAmauKjAIu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{userServiceBaseUrl}}",
+							"host": [
+								"{{userServiceBaseUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Management Service",
+			"item": [
+				{
+					"name": "Reset Database",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{managementServiceBaseUrl\n}}",
+							"host": [
+								"{{managementServiceBaseUrl\n}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "restaurantServiceBaseUrl",
+			"value": "http://localhost:5001",
+			"type": "string"
+		},
+		{
+			"key": "reviewServiceBaseUrl",
+			"value": "http://localhost:5004/reviews",
+			"type": "string"
+		},
+		{
+			"key": "menuServiceBaseUrl",
+			"value": "http://localhost:5002/menu-items",
+			"type": "string"
+		},
+		{
+			"key": "reservationServiceBaseUrl",
+			"value": "http://localhost:5003/reservation-details",
+			"type": "string"
+		},
+		{
+			"key": "orderServiceBaseUrl\n",
+			"value": "http://localhost:5005/orders",
+			"type": "string"
+		},
+		{
+			"key": "userServiceBaseUrl",
+			"value": "http://localhost:5006/authenticate",
+			"type": "string"
+		},
+		{
+			"key": "managementServiceBaseUrl\n",
+			"value": "http://localhost:5000/reset-db",
+			"type": "string"
+		},
+		{
+			"key": "userServiceRegisterBaseUrl",
+			"value": "http://localhost:5006/register",
+			"type": "string"
+		}
+	]
+}

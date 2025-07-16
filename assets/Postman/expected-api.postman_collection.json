@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "975e4cb3-6066-4f70-8984-67ee29d3d44f",
+		"name": "huro2 gw",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"linda.martinez@exampladfe.com\",\r\n    \"password\": \"lindamar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.localhost/v1/login",
+					"protocol": "http",
+					"host": [
+						"api",
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Review",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"linda.martinez@exampladfe.com\",\r\n    \"password\": \"lindamar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.localhost/v1/login",
+					"protocol": "http",
+					"host": [
+						"api",
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwibmFtZSI6IkxpbmRhIE1hcnRpbmV6IiwiZW1haWwiOiJsaW5kYS5tYXJ0aW5lekBleGFtcGxlLmNvbSIsImlhdCI6MTY5MzM4NTA0MSwiZXhwIjoxNjkzNDEzODQxfQ.ZBLQJ_QHsPbkKZEwI0r1aaD9EIPD5fqISwtfoAQ68Gw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"menuItemId\": \"1\",\r\n            \"quantity\": 10\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.localhost/v1/restaurant/1/order",
+					"protocol": "http",
+					"host": [
+						"api",
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"restaurant",
+						"1",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jakab Gipsz\",\r\n    \"email\": \"jakab.gipsz2@example.com\",\r\n    \"password\": \"jakab2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.localhost/v1/register",
+					"protocol": "http",
+					"host": [
+						"api",
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywibmFtZSI6Ikpha2FiIEdpcHN6IiwiZW1haWwiOiJqYWthYi5naXBzejJAZXhhbXBsZS5jb20iLCJpYXQiOjE2OTMzODEwODEsImV4cCI6MTY5MzQwOTg4MX0.4izm8Ft6rgOuk-_AleitVwbFZ_SV-ygWb04YzM2aRqw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jakab Gipsz\",\r\n    \"email\": \"jakab.gipsz2@example.com\",\r\n    \"password\": \"jakab2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.localhost/v1/search?query=sz",
+					"protocol": "http",
+					"host": [
+						"api",
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "sz"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get restaurant details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywibmFtZSI6Ikpha2FiIEdpcHN6IiwiZW1haWwiOiJqYWthYi5naXBzejJAZXhhbXBsZS5jb20iLCJpYXQiOjE2OTMzODEwODEsImV4cCI6MTY5MzQwOTg4MX0.4izm8Ft6rgOuk-_AleitVwbFZ_SV-ygWb04YzM2aRqw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jakab Gipsz\",\r\n    \"email\": \"jakab.gipsz2@example.com\",\r\n    \"password\": \"jakab2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.localhost/v1/restaurant/1",
+					"protocol": "http",
+					"host": [
+						"api",
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"restaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
