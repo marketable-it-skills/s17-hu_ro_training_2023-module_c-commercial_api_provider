@@ -1,8 +1,8 @@
 {
   "id": 8,
-  "name": "HU-RO Training 2023 - Module A",
-  "displayName": "DineEase Showcase Website",
-  "description": "Create a captivating promotional website for DineEase, a revolutionary dining platform. Build a responsive HTML/CSS website showcasing restaurant search, featured restaurants, testimonials, and company information to attract new users to the DineEase platform.",
+  "name": "HU-RO Training 2023 - Module C",
+  "displayName": "Commercial API Provider",
+  "description": "Create a secure REST API Gateway that provides commercial access to DineEase restaurant services. Build a robust API with authentication, caching, rate limiting, and comprehensive error handling that wraps existing unsecure services into a reliable commercial offering.",
   "url": "https://github.com/marketable-it-skills/s17-hu_ro_training_2023-module_a-dinease-showcase-website",
   "skillDomainIds": [1],
   "competition": "Hungary-Romania Training 2023",
@@ -21,13 +21,13 @@
       "url": "https://www.linkedin.com/in/0l1v3rr/"
     }
   ],
-  "technologies": ["HTML", "CSS", "Responsive Design", "WCAG", "SEO"],
+  "technologies": ["Node.js", "Express", "REST API", "JWT", "API Gateway", "Caching", "Rate Limiting"],
   "tags": [
-    "frontend",
-    "responsive",
-    "accessibility",
-    "seo",
+    "backend",
+    "api",
+    "authentication",
+    "security",
     "restaurant",
-    "promotional-website"
+    "commercial-api"
   ]
 }

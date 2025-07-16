@@ -1,0 +1,138 @@
+{
+  "totalMark": 20,
+  "wsosSections": {
+    "1": "Work organization and self-management",
+    "2": "Communication and interpersonal skills",
+    "3": "Design Implementation",
+    "5": "Back-End Development"
+  },
+  "subCriterions": [
+    {
+      "name": "API Gateway Implementation",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "REST API server is properly set up and configured",
+          "maxMark": 2,
+          "wsosSection": 5,
+          "extraDescription": "Express.js or similar framework is used with proper middleware configuration for JSON parsing, CORS, and other settings",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "All required API endpoints are implemented",
+          "maxMark": 3,
+          "wsosSection": 5,
+          "extraDescription": "API endpoints for authentication, restaurant search, detailed views, orders, and reviews are implemented according to specification",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Security Implementation",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Authentication and authorization mechanisms are implemented",
+          "maxMark": 3,
+          "wsosSection": 5,
+          "extraDescription": "Bearer token authentication is properly implemented with validation against authentication service",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Data validation prevents security vulnerabilities",
+          "maxMark": 2,
+          "wsosSection": 5,
+          "extraDescription": "Input validation is implemented to prevent injection attacks and other security issues",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reliability and Performance",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Caching mechanisms are implemented",
+          "maxMark": 2,
+          "wsosSection": 5,
+          "extraDescription": "Proper caching is implemented to improve response times and reduce dependency on unsecure APIs",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Rate limiting is implemented",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Rate limiting mechanisms are in place to prevent API abuse",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Error handling and graceful degradation",
+          "maxMark": 2,
+          "wsosSection": 5,
+          "extraDescription": "API provides meaningful responses when underlying services are unavailable",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Integration and Data Flow",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Proper integration with unsecure APIs",
+          "maxMark": 2,
+          "wsosSection": 5,
+          "extraDescription": "API successfully fetches and processes data from provided unsecure services",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Comprehensive logging is implemented",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "All requests and errors are properly logged for debugging and monitoring",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Work Organization",
+      "aspects": [
+        {
+          "type": "judgement",
+          "description": "Code organization and structure",
+          "maxMark": 2,
+          "wsosSection": 1,
+          "judgementScoreDescription": [
+            "Poor code organization with no clear structure",
+            "Basic organization with some structure",
+            "Good organization with clear separation of concerns",
+            "Excellent organization following best practices"
+          ]
+        }
+      ]
+    }
+  ]
+}
