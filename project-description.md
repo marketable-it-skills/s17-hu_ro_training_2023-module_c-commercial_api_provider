@@ -1,82 +1,40 @@
-# Test Project Outline – Module A – DineEase Showcase Website
+DineEase, a small startup based in Hungary, initially made waves in the restaurant industry with their innovative restaurant software. Now, they are expanding their horizons with a brand new service that aims to revolutionize how people discover, explore, and engage with restaurants. Introducing DineEase, the all-in-one portal and progressive web application designed to enhance the dining experience. Visitors can choose between restaurants, view the full menu of any restaurant, read reviews from previous guests about the restaurant service and food. They can also book a table at the restaurant of their choice and order and pay through the website or the app.
 
-## Competition time
+# Module C - Commercial API Provider
 
-3 hours
+In this module, you will build a server-side component that provides secure and reliable commercial APIs. These APIs will act as wrappers over the existing, less-secure existing APIs. This will allow third-party applications to access the rich data offered by DineEase, enabling integration with other platforms and services within the culinary ecosystem.
 
-## Introduction
+## Task List:
 
-This project focuses on creating a captivating promotional website for DineEase, a revolutionary dining platform that aims to enhance the dining experience. DineEase is a small startup initially based in Hungary that made waves in the restaurant industry with their innovative restaurant software. Now, they are expanding their horizons with a brand new service designed to revolutionize how people discover, explore, and engage with restaurants.
+### 1. Setup and Initialization
 
-The DineEase platform serves as an all-in-one portal and progressive web application where visitors can choose between restaurants, view full menus, read reviews from previous guests about restaurant service and food, book tables, and order and pay through the website or app. This promotional website should showcase the service's features and entice users to explore and use the DineEase platform for their dining needs.
+- Create a REST API server using the framework you selected.
+- Initialize and configure middleware for parsing JSON, handling CORS, and other relevant settings.
 
-## General Description of Project and Tasks
+### 2. Security Implementation
 
-The website must consist of five different pages: Home, About Us, Contact, Privacy Policy, and Terms of Use. The design of all subpages should be visually aligned, creating a cohesive and harmonious user experience. Consistency in layout, typography, and color schemes is key to reinforcing the DineEase brand identity.
+- Implement authentication and authorization mechanisms to secure the API endpoints.
+- Authentication is managed using bearer tokens. When a request is received, the API Gateway validates the token by making a call to the authentication service's designated endpoint. Clients should include this bearer token in the Authorization header of their requests: `Bearer <token>`.
+- Ensure data validation for incoming requests to prevent injections and other potential security vulnerabilities.
 
-A graphic designer has already created a website design that should be followed as closely as possible. The design files, images, and text content can be found in the `assets` folder.
+### 3. Data Integration
 
-The website must be responsive and support at least the following viewports:
-- Mobile: 360×640
-- Tablet: 768×1024  
-- Desktop: 1920×1080
+- Create endpoints that fetch data from the existing, less-secure APIs. You can find the Open API documentation of the existing API in assets/module-C/API/unsecure-API.yaml file.
+- Store this fetched data temporarily for serving via the commercial APIs, if necessary.
 
-No server-side or client-side frameworks are allowed for this project, as the focus is on pure HTML and CSS development. CSS preprocessors such as Sass or Less may be used to streamline the CSS workflow, but the generated CSS code must pass W3C validations.
+### 4. Unsecure API Endpoints
 
-All HTML and CSS code must pass W3C validations. The website must conform to accessibility standards (WCAG) and implement SEO best practices to optimize it for search engine visibility and attract organic traffic.
+- You can find an Open API documentation under the [assets/module-C/API/provided-API.yaml](./assets/module-C/API/provided-API.yaml) file.
 
-## Requirements
+### 5. Reliability Improvements
 
-The goal of the website is to attract new users and showcase the unique features and offerings of the DineEase service. The website should encourage visitors to explore the DineEase platform and highlight the essence of the platform's dining possibilities.
+- Implement caching mechanisms to improve response times and reduce dependencies on the less-secure APIs.
+- Implement rate limiting and other measures to prevent abuse of the commercial API.
+- If one of the underlying services isn't available, the API Gateway should still provide a response using the available data. If the review or order service is offline, ensure the gateway offers a clear message to inform the user.
+- Implement logging to improve the ability to trace out the errors of the applications. Loggin also provides valuable insights into the functioning and failure of your API.
+  - You should also log every request, not just the errors.
 
-### Home Page
+### 6. Expected API Endpoints
 
-The Home Page should consist of the following sections:
-
-- **Hero Section**: A welcoming and visually engaging hero section with an enticing call-to-action to explore restaurants
-- **Featured Restaurants**: A section showcasing top-rated restaurants, complete with images, brief descriptions, and ratings
-- **Testimonials**: Testimonials from satisfied guests, sharing their delightful dining experiences through DineEase
-- **Restaurant Search**: An interactive search bar allowing users to discover restaurants by cuisine, location, or specific preferences. Users should be able to switch between simple and advanced search modes (see: "design/Restaurant Search Flow.png")
-- **Footer**: Footer section with essential links, contact information, and social media integration
-
-### About Us Page
-
-The About Us page should include:
-
-- **Mission Overview**: An overview of DineEase's mission, vision, and commitment to revolutionizing the dining experience
-- **Timeline**: A captivating timeline showcasing the journey of DineEase from its inception to becoming a culinary leader
-- **Team Profiles**: Profiles of the passionate team behind DineEase, featuring their expertise and dedication to the platform's success
-
-### Contact Page
-
-The Contact page should feature:
-
-- **Contact Form**: A user-friendly contact form allowing users to get in touch with DineEase for inquiries or feedback
-- **Contact Information**: Essential contact information, including email addresses and phone numbers, for prompt communication
-- **Social Media Links**: Links to DineEase's social media profiles, enabling users to stay connected and informed about the latest updates
-
-### Privacy Policy and Terms of Use Pages
-
-These pages should include:
-
-- **Privacy Policy**: Transparent disclosure of DineEase's privacy policy, emphasizing data protection and user confidentiality
-- **Terms of Use**: Comprehensive terms of use outlining the rights and responsibilities of users while using the DineEase platform
-
-## Assessment
-
-The website will be thoroughly tested on the latest stable versions of Google Chrome and Firefox. Assessment will use the following tools and methods:
-
-- **W3C Validation**: HTML and CSS validity will be checked using W3C validation tools
-- **Accessibility Testing**: Accessibility compliance will be tested using axe for WCAG standards
-- **Responsive Design**: The website will be tested across the three specified viewports (mobile, tablet, desktop)
-- **SEO Evaluation**: SEO implementation will be assessed through meta tags, semantic HTML structure, and content optimization
-
-## Mark distribution
-
-| WSOS SECTION | Description                            | Points |
-|--------------|----------------------------------------|--------|
-| 1            | Work organization and self-management  | 2      |
-| 2            | Communication and interpersonal skills | 2      |
-| 3            | Design Implementation                  | 6      |
-| 4            | Front-End Development                  | 7      |
-| **Total**    |                                        | **17** |
+- Develop an API Gateway that aggregates data from the unsecure services listed above. The gateway should handle user authentication, restaurant search, detailed restaurant views, order placements, and user reviews. Ensure the correct composition of responses from various services, as specified in the provided [OpenAPI YAML](./assets/module-C/API/expected-API.yaml).
+- Your secured API's base URL should be `http://api.localhost/v1`

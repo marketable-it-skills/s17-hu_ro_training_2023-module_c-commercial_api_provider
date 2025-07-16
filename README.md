@@ -1,40 +1,28 @@
-DineEase, a small startup based in Hungary, initially made waves in the restaurant industry with their innovative restaurant software. Now, they are expanding their horizons with a brand new service that aims to revolutionize how people discover, explore, and engage with restaurants. Introducing DineEase, the all-in-one portal and progressive web application designed to enhance the dining experience. Visitors can choose between restaurants, view the full menu of any restaurant, read reviews from previous guests about the restaurant service and food. They can also book a table at the restaurant of their choice and order and pay through the website or the app.
+# Marketable IT Skills Project Repository
 
-# Module C - Commercial API Provider
+## Title of the Project
 
-In this module, you will build a server-side component that provides secure and reliable commercial APIs. These APIs will act as wrappers over the existing, less-secure existing APIs. This will allow third-party applications to access the rich data offered by DineEase, enabling integration with other platforms and services within the culinary ecosystem.
+DineEase Showcase Website
 
-## Task List:
+## Short Description
 
-### 1. Setup and Initialization
+Create a captivating promotional website for DineEase, a revolutionary dining platform. Build a responsive HTML/CSS website showcasing restaurant search, featured restaurants, testimonials, and company information to attract new users to the DineEase platform.
 
-- Create a REST API server using the framework you selected.
-- Initialize and configure middleware for parsing JSON, handling CORS, and other relevant settings.
+## Skill domain(s)
 
-### 2. Security Implementation
+- Web Technologies
 
-- Implement authentication and authorization mechanisms to secure the API endpoints.
-- Authentication is managed using bearer tokens. When a request is received, the API Gateway validates the token by making a call to the authentication service's designated endpoint. Clients should include this bearer token in the Authorization header of their requests: `Bearer <token>`.
-- Ensure data validation for incoming requests to prevent injections and other potential security vulnerabilities.
+## Task Origin
 
-### 3. Data Integration
+This project task is based on test projects from the Hungary-Romania Training 2023 Module A competition submitted by [Zoltan Sisak](https://www.linkedin.com/in/zoltan-sisak/), [Janos Hidvegi](https://www.linkedin.com/in/j%C3%A1nos-hidv%C3%A9gi-3b19591b1/), and [Oliver Mrakovics](https://www.linkedin.com/in/0l1v3rr/). Tasks from these competitions are updated, modularized, and standardized to form the basis of the project task repository within the Erasmus+ "Marketable IT Skills" project.
 
-- Create endpoints that fetch data from the existing, less-secure APIs. You can find the Open API documentation of the existing API in assets/module-C/API/unsecure-API.yaml file.
-- Store this fetched data temporarily for serving via the commercial APIs, if necessary.
+## Content
 
-### 4. Unsecure API Endpoints
+- [Project Description](project-description.md)
+- [Assets](assets/)
+- [Development and Deployment Guide](development-and-deployment.md)
+- [Marking Scheme](marking/marking-scheme.json)
 
-- You can find an Open API documentation under the [assets/module-C/API/provided-API.yaml](./assets/module-C/API/provided-API.yaml) file.
+## About the Project
 
-### 5. Reliability Improvements
-
-- Implement caching mechanisms to improve response times and reduce dependencies on the less-secure APIs.
-- Implement rate limiting and other measures to prevent abuse of the commercial API.
-- If one of the underlying services isn't available, the API Gateway should still provide a response using the available data. If the review or order service is offline, ensure the gateway offers a clear message to inform the user.
-- Implement logging to improve the ability to trace out the errors of the applications. Loggin also provides valuable insights into the functioning and failure of your API.
-  - You should also log every request, not just the errors.
-
-### 6. Expected API Endpoints
-
-- Develop an API Gateway that aggregates data from the unsecure services listed above. The gateway should handle user authentication, restaurant search, detailed restaurant views, order placements, and user reviews. Ensure the correct composition of responses from various services, as specified in the provided [OpenAPI YAML](./assets/module-C/API/expected-API.yaml).
-- Your secured API's base URL should be `http://api.localhost/v1`
+This repository is part of the **"Marketable IT Skills: Integrating Real-World Challenges into Vocational Education"** project. The project is supported by the **Erasmus+ programme** of the European Union. It is coordinated by the **HTTP Foundation** (Hungary) in cooperation with the partner institution **Helsinki Business College OY** (Finland). The primary goal of the project is to support IT vocational education by providing a collection of project tasks and a web application with an evaluation support system. These tasks aim to reflect labor market expectations, simulate real workplace challenges, and support talent management. The project's task collection draws upon competition materials of WorldSkills, EuroSkills and different national and international competition. The web application is being developed as part of the project activities.
