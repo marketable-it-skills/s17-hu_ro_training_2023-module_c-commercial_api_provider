@@ -1,0 +1,17 @@
+[
+    {"reservation_id": 1, "restaurant_id": 1, "user_name": "András Kovács", "date": "2023-08-15", "time": "19:00", "party_size": 2},
+    {"reservation_id": 2, "restaurant_id": 2, "user_name": "Elena Popescu", "date": "2023-08-20", "time": "20:30", "party_size": 4},
+    {"reservation_id": 3, "restaurant_id": 3, "user_name": "Krzysztof Nowak", "date": "2023-08-18", "time": "18:45", "party_size": 3},
+    {"reservation_id": 4, "restaurant_id": 4, "user_name": "Szilvia Horváth", "date": "2023-08-16", "time": "13:15", "party_size": 2},
+    {"reservation_id": 5, "restaurant_id": 5, "user_name": "Lukasz Kowalski", "date": "2023-08-19", "time": "19:30", "party_size": 5},
+    {"reservation_id": 6, "restaurant_id": 6, "user_name": "Gabriella Tóth", "date": "2023-08-17", "time": "20:00", "party_size": 3},
+    {"reservation_id": 7, "restaurant_id": 7, "user_name": "Adrian Ionescu", "date": "2023-08-22", "time": "19:30", "party_size": 2},
+    {"reservation_id": 8, "restaurant_id": 8, "user_name": "Alicja Nowak", "date": "2023-08-21", "time": "18:15", "party_size": 4},
+    {"reservation_id": 9, "restaurant_id": 9, "user_name": "Attila Nagy", "date": "2023-08-23", "time": "13:45", "party_size": 2},
+    {"reservation_id": 10, "restaurant_id": 10, "user_name": "Viktor Popov", "date": "2023-08-24", "time": "19:30", "party_size": 6},
+    {"reservation_id": 11, "restaurant_id": 11, "user_name": "Veronika Kovács", "date": "2023-08-26", "time": "14:00", "party_size": 3},
+    {"reservation_id": 12, "restaurant_id": 12, "user_name": "Ioana Mihai", "date": "2023-08-27", "time": "19:45", "party_size": 4},
+    {"reservation_id": 13, "restaurant_id": 13, "user_name": "Kamil Kowalczyk", "date": "2023-08-28", "time": "20:30", "party_size": 2},
+    {"reservation_id": 14, "restaurant_id": 14, "user_name": "László Balogh", "date": "2023-08-29", "time": "18:30", "party_size": 5},
+    {"reservation_id": 15, "restaurant_id": 15, "user_name": "Dorota Król", "date": "2023-08-30", "time": "19:15", "party_size": 3}
+]

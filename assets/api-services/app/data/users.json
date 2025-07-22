@@ -1,0 +1,92 @@
+[
+    {
+        "user_id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "password": "password123"
+    },
+    {
+        "user_id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "password": "securepass1"
+    },
+    {
+        "user_id": 3,
+        "name": "Robert Brown",
+        "email": "robert.brown@example.com",
+        "password": "robertpass"
+    },
+    {
+        "user_id": 4,
+        "name": "Emily Davis",
+        "email": "emily.davis@example.com",
+        "password": "emilydavispass"
+    },
+    {
+        "user_id": 5,
+        "name": "Michael Wilson",
+        "email": "michael.wilson@example.com",
+        "password": "mikewilson"
+    },
+    {
+        "user_id": 6,
+        "name": "Sarah Evans",
+        "email": "sarah.evans@example.com",
+        "password": "saraheva"
+    },
+    {
+        "user_id": 7,
+        "name": "William Green",
+        "email": "william.green@example.com",
+        "password": "willgreen2"
+    },
+    {
+        "user_id": 8,
+        "name": "Anna Johnson",
+        "email": "anna.johnson@example.com",
+        "password": "annajohn"
+    },
+    {
+        "user_id": 9,
+        "name": "David Taylor",
+        "email": "david.taylor@example.com",
+        "password": "davidtay"
+    },
+    {
+        "user_id": 10,
+        "name": "Jessica Moore",
+        "email": "jessica.moore@example.com",
+        "password": "jessmoore3"
+    },
+    {
+        "user_id": 11,
+        "name": "Richard White",
+        "email": "richard.white@example.com",
+        "password": "richwhite"
+    },
+    {
+        "user_id": 12,
+        "name": "Linda Martinez",
+        "email": "linda.martinez@example.com",
+        "password": "lindamar"
+    },
+    {
+        "user_id": 13,
+        "name": "Joseph King",
+        "email": "joseph.king@example.com",
+        "password": "joeking45"
+    },
+    {
+        "user_id": 14,
+        "name": "Patricia Clark",
+        "email": "patricia.clark@example.com",
+        "password": "patclark56"
+    },
+    {
+        "user_id": 15,
+        "name": "Mark Lewis",
+        "email": "mark.lewis@example.com",
+        "password": "marklewispass"
+    }
+]

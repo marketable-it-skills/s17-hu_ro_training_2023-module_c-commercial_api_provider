@@ -1,0 +1,17 @@
+[
+    {"review_id": 1, "restaurant_id": 1, "user_name": "Anna Nagy", "rating": 4.8, "comment": "Wonderful traditional Hungarian dishes!"},
+    {"review_id": 2, "restaurant_id": 2, "user_name": "Andrei Ionescu", "rating": 4.2, "comment": "Delicious Romanian flavors in every bite."},
+    {"review_id": 3, "restaurant_id": 3, "user_name": "Kasia Wójcik", "rating": 4.9, "comment": "Authentic Polish cuisine, loved it!"},
+    {"review_id": 4, "restaurant_id": 4, "user_name": "Márton Szabó", "rating": 4.0, "comment": "Great fish, friendly staff."},
+    {"review_id": 5, "restaurant_id": 5, "user_name": "Aneta Nowak", "rating": 4.5, "comment": "Tasty pizza and cozy atmosphere."},
+    {"review_id": 6, "restaurant_id": 6, "user_name": "Péter Farkas", "rating": 4.6, "comment": "Excellent service and tasty Hungarian dishes."},
+    {"review_id": 7, "restaurant_id": 7, "user_name": "Cristina Avram", "rating": 4.3, "comment": "Traditional Romanian food, good experience."},
+    {"review_id": 8, "restaurant_id": 8, "user_name": "Jacek Nowak", "rating": 4.7, "comment": "Loved the Polish atmosphere and food."},
+    {"review_id": 9, "restaurant_id": 9, "user_name": "Beáta Kiss", "rating": 4.5, "comment": "Fresh seafood, great location by the river."},
+    {"review_id": 10, "restaurant_id": 10, "user_name": "Stefan Petrov", "rating": 4.1, "comment": "Nice Italian restaurant, good pasta."},
+    {"review_id": 11, "restaurant_id": 11, "user_name": "Andrea Kovács", "rating": 4.3, "comment": "Classic Hungarian cuisine, worth a visit."},
+    {"review_id": 12, "restaurant_id": 12, "user_name": "Radu Popescu", "rating": 4.7, "comment": "Amazing Romanian food, will come again."},
+    {"review_id": 13, "restaurant_id": 13, "user_name": "Monika Kowalska", "rating": 4.5, "comment": "Polish pierogi were delicious, nice staff."},
+    {"review_id": 14, "restaurant_id": 14, "user_name": "Tamás Varga", "rating": 4.4, "comment": "Enjoyed the fish dishes, nice ambience."},
+    {"review_id": 15, "restaurant_id": 15, "user_name": "Karolina Zawadzka", "rating": 4.8, "comment": "Fantastic Italian food, great service."}
+]
