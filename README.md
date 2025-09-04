@@ -20,7 +20,6 @@ This project task is based on test projects from the Hungary-Romania Training 20
 
 - [Project Description](project-description.md)
 - [Assets](assets/)
-- [Development and Deployment Guide](development-and-deployment.md)
 - [Marking Scheme](marking/marking-scheme.json)
 
 ## About the Project
