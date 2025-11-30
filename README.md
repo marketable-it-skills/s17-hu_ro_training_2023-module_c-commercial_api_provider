@@ -14,7 +14,7 @@ Create a secure REST API Gateway that provides commercial access to DineEase res
 
 ## Task Origin
 
-This project task is based on test projects from the Hungary-Romania Training 2023 Module C competition submitted by [Zoltan Sisak](https://www.linkedin.com/in/zoltan-sisak/), [Janos Hidvegi](https://www.linkedin.com/in/j%C3%A1nos-hidv%C3%A9gi-3b19591b1/), and [Oliver Mrakovics](https://www.linkedin.com/in/0l1v3rr/). Tasks from these competitions are updated, modularized, and standardized to form the basis of the project task repository within the Erasmus+ "Marketable IT Skills" project.
+This project task is based on the **Module C test project** from the **EuroSkills 2023 Training HU** competition submitted by [Zoltan Sisak](https://www.linkedin.com/in/zoltan-sisak/), [Janos Hidvegi](https://www.linkedin.com/in/j%C3%A1nos-hidv%C3%A9gi-3b19591b1/), and [Oliver Mrakovics](https://www.linkedin.com/in/0l1v3rr/). Tasks from this competition are updated, modularized, and standardized to form the basis of the project task repository within the Erasmus+ **"Marketable IT Skills: Integrating Real-World Challenges into Vocational Education"** project.
 
 ## Content
 
